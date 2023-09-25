@@ -86,7 +86,7 @@ const MultiLineInput: React.FC = () => {
         }
       }
     }
-    if (duplicates.length) {
+    if (duplicates.length && alerts.length === 0) {
       duplicates.forEach((address) => {
         alerts.push(
           `${address} duplicate in Line: ${uniqAddresses[address].index.join(
