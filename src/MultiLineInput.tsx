@@ -81,7 +81,7 @@ const MultiLineInput: React.FC = () => {
         uniqAddresses[words[0]].value.push(parseFloat(words[1]));
         uniqAddresses[words[0]].index.push(i + 1);
         uniqAddresses[words[0]].sep.push(sep);
-        if (uniqAddresses[words[0]].value.length > 1) {
+        if (uniqAddresses[words[0]].value.length === 2) {
           duplicates.push(words[0]);
         }
       }
